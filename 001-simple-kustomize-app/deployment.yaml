@@ -15,3 +15,4 @@ spec:
       containers:
       - name: test-001
         image: 10.42.0.1:30000/test-image:1.0.0
+        imagePullPolicy: Always
