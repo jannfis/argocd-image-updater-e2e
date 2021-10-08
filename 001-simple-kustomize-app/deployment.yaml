@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: e2e-repository
+  name: test-001
 spec:
   replicas: 1
   selector:
@@ -16,5 +16,5 @@ spec:
       - name: test-001
         image: 10.42.0.1:30000/test-image:1.0.0
         command:
-        - sleep
-        - 300
+        - "sleep"
+        - "300"
